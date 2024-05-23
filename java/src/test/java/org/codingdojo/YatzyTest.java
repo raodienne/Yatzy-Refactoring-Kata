@@ -117,7 +117,9 @@ public class YatzyTest {
     @Test
     public void fullHouse_shouldSum() {
         assertEquals(0, Yatzy.of(6, 6, 6, 6, 6).fullHouse());
+        assertEquals(0, Yatzy.of(6, 6, 6, 3, 2).fullHouse());
         assertEquals(18, Yatzy.of(6, 2, 2, 2, 6).fullHouse());
+        assertEquals(22, Yatzy.of(6, 2, 6, 2, 6).fullHouse());
         assertEquals(0, Yatzy.of(2, 3, 4, 5, 6).fullHouse());
     }
 }
